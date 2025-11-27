@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shop_cart.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Shop cart</title>
+</head>
+<body>
+  <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <span class="logo"><img src="ASSET/logo.png" alt=""></span>
+        <span>Furnito</span>
+      </div>
+      <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+      <nav>
+        <a href="#home" target="_blank">Home</a>
+        <a href="shop.html" target="_blank">Shop</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="blog.html" target="_blank">Blog</a>
+      </nav>
+       <div class="icon">
+          <a href="contact.html"><i class="bi bi-person-exclamation"></i></a>
+          <a href="#"><i class="bi bi-search"></i></a>
+          <a href="#"><i class="bi bi-heart"></i></a>
+          <a href="product_comparisoon.html"><i class="bi bi-cart3"></i></a>
+        </div>
+
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </header>
+    <!-- BREADCRUMB -->
+        <div class="breadcrumb">
+            <div class="logo"><img src="ASSET/logo.png" alt="Furniro Logo"></div>
+            Home > Shop > <strong> | Asgaard sofa</strong>
+        </div>
+
+        <!-- MAIN GRID -->
+        <main class="main-grid">
+
+            <!-- THUMB IMAGES -->
+            <div class="thumbs">
+                <button data-src="ASSET/F1.png">
+                    <img src="ASSET/F1.png">
+                </button>
+                <button data-src="ASSET/F2.png">
+                    <img src="ASSET/F2.png">
+                </button>
+                <button data-src="ASSET/F3.png">
+                    <img src="ASSET/F3.png">
+                </button>
+                <button data-src="ASSET/F4.png">
+                    <img src="ASSET/F4.png">
+                </button>
+            </div>
+
+            <!-- MAIN IMAGE -->
+            <div class="image-wrap">
+                <img id="mainImg" src="ASSET/FM1.png">
+            </div>
+
+            <!-- PRODUCT INFO -->
+            <aside class="info">
+                <div>
+                    <h1>Asgaard sofa</h1>
+                    <div class="price">Rs. 250,000.00</div>
+                    <div class="rating">
+                        <span style="color: yellow;">★★★★★</span> <span style="margin-left:8px">5 Customer Reviews</span>
+                    </div>
+                    <div class="desc" style="color: black;">
+                        Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                        stout-hearted hero with well-balanced audio and crisp midrange.
+                    </div>
+                </div>
+
+                <!-- OPTIONS -->
+                <div class="options">
+                    <div class="size">
+                        <label>Size</label>
+                        <div class="list">
+                            <button>L</button><button>XL</button><button>XS</button>
+                        </div>
+                    </div>
+                    <div class="color">
+                        <label>Color</label>
+                        <div class="list">
+                            <button style="background:#7b61ff"></button>
+                            <button style="background:#111"></button>
+                            <button style="background:#c7a97a"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CART CONTROLS -->
+                <div class="controls">
+                    <div class="qty">
+                        <button class="decBtn">-</button>
+                        <span class="qtyVal">1</span>
+                        <button class="incBtn">+</button>
+                    </div>
+
+                    <div class="action-row">
+                        <button class="btn primary add-to-cart" data-id="S5001" data-title="Asgaard sofa"
+                            data-price="250000" data-img="ASSET/FM1.png">Add To Cart</button>
+                        <a href="product_comparisoon.html"><button class="btn">+ Compare</button></a>
+                    </div>
+                </div>
+
+                <div class="meta">
+                    <div><strong>SKU</strong>: S5001</div>
+                    <div><strong>Category</strong>: Sofas</div>
+                    <div><strong>Tags</strong>: Sofa, Chair, Home, Shop</div>
+                </div>
+            </aside>
+
+        </main>
+
+        <div class="wrap">
+            <nav class="tabs" aria-label="product tabs">
+                <div class="active">Description</div>
+                <div>Additional Information</div>
+                <div>Reviews [5]</div>
+            </nav>
+
+            <p class="desc">
+                Embodying the raw, reverent spirit of rock n' roll, the Kilburn portable active stereo speaker blends
+                the unmistakable look and sound of vintage amps with modern engineering. Compact, well-balanced and
+                engineered to perform — perfect for living rooms or on the road.
+            </p>
+            <p class="desc">
+                weighing in under 7 pounds the kiburn is a lightweight piece of vintage styled engineering. Setting the
+                bar as one of the loudest speakers in its class. the kiibum is a compact, stout-hearted with a
+                well-balanced audio which boast a clear midrange and extended highs for a sound that is both articulate
+                and pronounced, the analogue knobs allow you to fine tune the controls to your personal preferences
+                while the guitar-influenced leather strap enables easy and stylish travel.
+            </p>
+
+            <section class="grid" aria-label="product images">
+                <article class="card">
+                    <div class="img-wrap">
+                        <img src="ASSET/F-01.png" alt="sofa image 1">
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="img-wrap">
+                        <img src="ASSET/F-02.png" alt="sofa image 2">
+                    </div>
+                </article>
+            </section>
+
+            <div class="divider"></div>
+        </div>
+
+        <!-- RELATED PRODUCTS -->
+        <section class="related">
+            <h3>Related Products</h3>
+
+            <div class="related-grid">
+                <div class="card">
+                    <img src="ASSET/kitchen-sample.png">
+                    <div class="card-body">
+                        <h4>Syltherine</h4>
+                        <p>Stylish cafe chair</p>
+                        <p>Rp 2.500.000</p>
+                        <button class="btn primary add-to-cart" data-id="R1001" data-title="Syltherine"
+                            data-price="2500000" data-img="ASSET/kitchen-sample.png">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ASSET/bedroom.png">
+                    <div class="card-body">
+                        <h4>Leviosa</h4>
+                        <p>Stylish cafe chair</p>
+                        <p>Rp 2.500.000</p>
+                        <button class="btn primary add-to-cart" data-id="R1002" data-title="Leviosa"
+                            data-price="2500000" data-img="ASSET/bedroom.png">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ASSET/down-sample.png">
+                    <div class="card-body">
+                        <h4>Lolito</h4>
+                        <p>Luxury Big Sofa</p>
+                        <p>Rp 7.000.000</p>
+                        <button class="btn primary add-to-cart" data-id="R1003" data-title="Lolito" data-price="7000000"
+                            data-img="ASSET/down-sample.png">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ASSET/product-bed.png">
+                    <div class="card-body">
+                        <h4>Respira</h4>
+                        <p>Outdoor bar table and stool</p>
+                        <p>Rp 500.000</p>
+                        <button class="btn primary add-to-cart" data-id="R1004" data-title="Respira" data-price="500000"
+                            data-img="ASSET/product-bed.png">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more">
+                <button>Show More</button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Info -->
+    <div class="footer-info">
+        <div>
+            <img src="ASSET/Vector (2).png" alt="High Quality Icon">
+            <p>High Quality</p>
+            <span>crafted from top materials</span>
+        </div>
+        <div>
+            <img src="ASSET/Vector (3).png" alt="Warranty Icon">
+            <p>Warranty Protection</p>
+            <span>Over 2 years</span>
+        </div>
+        <div>
+            <img src="ASSET/Vector (4).png" alt="Free Shipping Icon">
+            <p>Free Shipping</p>
+            <span>Order over 150 $</span>
+        </div>
+        <div>
+            <img src="ASSET/Vector (5).png" alt="Support Icon">
+            <p>24 / 7 Support</p>
+            <span>Dedicated support</span>
+        </div>
+
+        
+    </div>
+    <!-- FOOTER SECTION -->
+   <footer>
+    <div class="front">
+      <div class="text">
+        <h2>Funiro.</h2>
+        <p> 400 University Drive Suite 200 Coral
+          <br>Gables <br>Fl 33134 USA
+        </p>
+      </div>
+
+      <div class="list">
+        <p><a href="#" class="a1">Links</a></p>
+        <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Shop</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Contact</a></li>
+       </ul>
+      </div>
+      <div class="list">
+        <p><a href="#" class="a1">Help</a></p>
+       <ul>
+       <li><a href="#">Payment option</a></li>
+       <li><a href="#">Returns</a></li>
+       <li><a href="#">Privacy Policies</a></li>
+       </ul>
+      </div>
+      <div class="news">
+        <p><a href="" class="a1">newsletter</a></p>
+       <input type="text" placeholder="Enter Your Email Addtress">
+        <button><a href="">SUBSCRIBE</a></button>
+            </div>
+    </div>
+    <div class="back"> 
+      <p>2025 Furino. All rights reverved</p>
+    </div>
+   </footer>
+    <!-- CART POPUP -->
+    <div id="overlay"></div>
+
+    <aside id="cart">
+        <div class="header">
+            <strong>Shopping Cart</strong>
+            <button class="close-btn" id="closeBtn">✕</button>
+        </div>
+
+        <div class="items" id="cartItems"></div>
+
+        <div class="footer">
+            <div class="row">
+                <strong>Subtotal</strong>
+                <strong id="subtotal">Rs. 0</strong>
+            </div>
+
+            <div class="actions">
+                <a href="cart.html"><button class="btn">Cart</button></a>
+                <a href="checkout.html"><button class="btn primary">Checkout</button></a>
+                <a href="product_comparison.html"><button class="btn">Comparison</button></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- CTA PROFILE -->
+    <button class="cta-profile" id="ctaBtn" aria-label="Open help message" title="Help">
+        <img src="asset/image/notification.png" alt="profile">
+    </button>
+
+    <!-- POPUP CARD -->
+    <div class="cta-card" id="ctaCard" role="dialog" aria-live="polite" aria-hidden="true" aria-label="Tip">
+        <div class="avatar-sm" aria-hidden="true">
+            <img src="asset/image/miracle.jpg" alt="Profile">
+        </div>
+
+        <div class="card-body">
+            <div class="card-text" id="ctaText" aria-atomic="true">
+                <!-- text will be typed by JS -->
+            </div>
+
+            <div class="card-meta">
+                <div class="small-muted">Tip • Auto disappears</div>
+                <button class="cta-close" id="ctaCloseBtn" aria-label="Close message">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    
+    
+ <script>
+        /* ---------- Hamburger Menu Toggle ---------- */
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // thumbnail switching
+        document.querySelectorAll('.thumbs button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.getElementById('mainImg').src = btn.dataset.src;
+            });
+        });
+
+        // quantity controls for main product
+        const controls = document.querySelector('.controls');
+        let qty = 1;
+        const qtyEl = controls.querySelector('.qtyVal');
+        controls.querySelector('.incBtn').onclick = () => { qty++; qtyEl.textContent = qty; };
+        controls.querySelector('.decBtn').onclick = () => { if (qty > 1) { qty--; qtyEl.textContent = qty; } };
+
+        // cart functionality
+        const overlay = document.getElementById('overlay');
+        const cart = document.getElementById('cart');
+        const closeBtn = document.getElementById('closeBtn');
+        const cartItemsEl = document.getElementById('cartItems');
+        const subtotalEl = document.getElementById('subtotal');
+
+        let cartState = [];
+
+        // Add to cart for main + related products
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const id = btn.dataset.id;
+                const title = btn.dataset.title;
+                const price = Number(btn.dataset.price);
+                const img = btn.dataset.img;
+
+                // check if button is inside main product controls
+                let qtyToAdd = 1;
+                const btnControls = btn.closest('.controls');
+                if (btnControls) {
+                    qtyToAdd = Number(btnControls.querySelector('.qtyVal').textContent);
+                }
+
+                const existing = cartState.find(i => i.id === id);
+                if (existing) {
+                    existing.qty += qtyToAdd;
+                } else {
+                    cartState.push({ id, title, price, qty: qtyToAdd, img });
+                }
+
+                renderCart();
+                openCart();
+            });
+        });
+
+        // render cart items
+        function renderCart() {
+            cartItemsEl.innerHTML = "";
+            let total = 0;
+
+            cartState.forEach(item => {
+                total += item.price * item.qty;
+
+                const row = document.createElement('div');
+                row.className = 'cart-item';
+                row.innerHTML = `
+                    <img src="${item.img}">
+                    <div>
+                        <div style="font-weight:700">${item.title}</div>
+                        <div style="font-size:13px;color:#666">Qty: ${item.qty} • Rs. ${item.price.toLocaleString()}</div>
+                    </div>
+                    <button style="border:0;background:none;color:#999;cursor:pointer;" data-id="${item.id}">Remove</button>
+                `;
+
+                row.querySelector('button').onclick = () => {
+                    cartState = cartState.filter(i => i.id !== item.id);
+                    renderCart();
+                };
+
+                cartItemsEl.appendChild(row);
+            });
+
+            subtotalEl.textContent = "Rs. " + total.toLocaleString();
+        }
+
+        function openCart() { overlay.style.display = 'block'; cart.classList.add('open'); }
+        function closeCart() { overlay.style.display = 'none'; cart.classList.remove('open'); }
+        overlay.onclick = closeBtn.onclick = closeCart;
+
+        renderCart();
+
+        /* ---------- CTA Profile Configuration ---------- */
+        const MESSAGE = "👋 Welcome! Kindly click on any product image to add to cart 🛒";
+        const AUTO_HIDE_MS = 4500;
+        const SHOW_DELAY_MS = 800;
+        const LOCALSTORAGE_KEY = "cta_seen_v1";
+
+        const ctaBtn = document.getElementById("ctaBtn");
+        const ctaCard = document.getElementById("ctaCard");
+        const ctaText = document.getElementById("ctaText");
+        const ctaCloseBtn = document.getElementById("ctaCloseBtn");
+
+        let hideTimer = null;
+        let typingTimer = null;
+        let isTyping = false;
+
+        /* ---------- Utility: play short chime using WebAudio ---------- */
+        function playChime() {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const o = ctx.createOscillator();
+                const g = ctx.createGain();
+                o.type = "sine";
+                o.frequency.value = 880;
+                g.gain.value = 0.0001;
+                o.connect(g);
+                g.connect(ctx.destination);
+                o.start();
+
+                g.gain.exponentialRampToValueAtTime(0.12, ctx.currentTime + 0.01);
+                o.frequency.exponentialRampToValueAtTime(1100, ctx.currentTime + 0.08);
+                g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.28);
+                o.stop(ctx.currentTime + 0.3);
+            } catch (err) {
+                // fail silently if audio not available
+            }
+        }
+
+        /* ---------- Typing effect ---------- */
+        function typeMessage(targetEl, message, speed = 28) {
+            cancelTyping();
+            targetEl.textContent = "";
+            isTyping = true;
+            let i = 0;
+            const caret = document.createElement("span");
+            caret.className = "typing-caret";
+            targetEl.appendChild(caret);
+
+            typingTimer = setInterval(() => {
+                if (i >= message.length) {
+                    clearInterval(typingTimer);
+                    typingTimer = null;
+                    isTyping = false;
+                    setTimeout(() => { if (caret.parentNode) caret.remove(); }, 800);
+                    return;
+                }
+                caret.insertAdjacentText("beforebegin", message[i]);
+                i++;
+            }, speed);
+        }
+
+        function cancelTyping() {
+            if (typingTimer) {
+                clearInterval(typingTimer);
+                typingTimer = null;
+                isTyping = false;
+            }
+        }
+
+        /* ---------- Show / Hide logic ---------- */
+        function showCard(playSound = true, withTyping = true) {
+            ctaBtn.classList.remove("bounce");
+            void ctaBtn.offsetWidth;
+            ctaBtn.classList.add("bounce");
+
+            ctaCard.classList.add("show");
+            ctaCard.setAttribute("aria-hidden", "false");
+
+            if (withTyping) {
+                typeMessage(ctaText, MESSAGE);
+            } else {
+                cancelTyping();
+                ctaText.textContent = MESSAGE;
+            }
+
+            if (playSound) playChime();
+
+            clearTimeout(hideTimer);
+            hideTimer = setTimeout(() => {
+                hideCard();
+            }, AUTO_HIDE_MS);
+
+            try {
+                localStorage.setItem(LOCALSTORAGE_KEY, "1");
+            } catch (e) {}
+        }
+
+        function hideCard() {
+            cancelTyping();
+            ctaCard.classList.remove("show");
+            ctaCard.setAttribute("aria-hidden", "true");
+            clearTimeout(hideTimer);
+        }
+
+        /* ---------- Events ---------- */
+        ctaBtn.addEventListener("click", (e) => {
+            const wasShown = ctaCard.classList.contains("show");
+            if (wasShown) {
+                hideCard();
+            } else {
+                showCard(true, true);
+            }
+        });
+
+        ctaCloseBtn.addEventListener("click", (e) => {
+            hideCard();
+        });
+
+        /* ---------- Auto-show on first visit only ---------- */
+        window.addEventListener("load", () => {
+            let seen = false;
+            try {
+                seen = !!localStorage.getItem(LOCALSTORAGE_KEY);
+            } catch (e) {
+                seen = false;
+            }
+
+            if (!seen) {
+                setTimeout(() => {
+                    showCard(true, true);
+                }, SHOW_DELAY_MS);
+            }
+        });
+
+        /* Optional: keyboard accessibility */
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "h" && (e.ctrlKey || e.metaKey)) {
+                e.preventDefault();
+                if (ctaCard.classList.contains("show")) hideCard();
+                else showCard(true, false);
+            }
+        });
+    </script> 
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Project</title>
+  <link rel="stylesheet" href="shop.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <span class="logo"><img src="ASSET/logo.png" alt=""></span>
+        <span>Furnito</span>
+      </div>
+      <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+      <nav>
+        <a href="Index.html" target="_blank">Home</a>
+        <a href="shop.html" target="_blank">Shop</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="blog.html" target="_blank">Blog</a>
+      </nav>
+       <div class="icon">
+          <a href="contact.html"><i class="bi bi-person-exclamation"></i></a>
+          <a href="#"><i class="bi bi-search"></i></a>
+          <a href="#"><i class="bi bi-heart"></i></a>
+          <a href="product_comparisoon.html"><i class="bi bi-cart3"></i></a>
+        </div>
+
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </header>
+    <!-- HEAD SECTION -->
+    <section class="head">
+      <img src="ASSET/shopbg.jpg" alt="Background image">
+      <div class="ovalay1"> 
+        <p>Shop</p>
+        <div class="accord1">
+          <span>Home > Shop</span>
+        </div>
+      </div>
+    </section>
+    <div class="under">
+      <div class="place"> 
+        <span>
+          <img src="ASSET/filtter.png" alt="filter">
+          Filter
+        </span>
+        <span><img src="ASSET/Vector.png" alt=""></span>
+        <span><img src="ASSET/Vector (1).png" alt=""></span>
+        <span>|</span>
+        <span>Showing 1-16 of 32 results</span>
+      </div>
+      
+      <div class="press">
+    <div class="side">
+      <label for="show">Show</label>
+     <select name="show" id="show-count">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16" selected >16</option>
+      <option value="32">32</option>
+      <option value="64">64</option>
+     </select>
+    </div>
+    <div class="fault">
+      <label for="sort">Sort by</label>
+      <select name="sort" id="sort">
+        <option value="Default" selected>Default</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="">Name: A to Z</option>
+      </select>
+    </div>
+    </div>
+
+    
+    </div>
+
+
+    <section class="shop">
+      <div class="p-card">
+      <!-- 1ST PRODUCT -->
+     <div class="pro1-con">
+       <div class="pro1"><img src="ASSET/product-side.png" alt="Syitherine"> <div class="new"><p>-30%</p> 
+      </div>
+      <div class="ovalay"> 
+        <button>Add to cart</button>
+        <div class="accord">
+          <span> <img src="ASSET/gridicons_share.png" alt="">Share</span><span> <img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span><span> <img src="ASSET/Heart.png" alt="">Like</span>
+        </div>
+      </div>
+      <div class="pro-text">
+        <h3> Syitherine</h3>
+        <p>stylish cafe chair</p>
+        <span class="n-price"> Rp 2.500.000 </span>
+        <span class="o-price">Rp 3.500.000</span>
+      </div>
+    </div>
+    </div>
+
+    <!-- 2ND PRODUCT -->
+     <div class="pro2-con">
+      <div class="pro2">
+        <img src="ASSET/product-chair.png" alt="">
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Leviosa</h3>
+          <p>Stylish cafe chair</p>
+          <span class="n-price">Rp 2.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 3RD PRODUCT -->
+     <div class="pro3-con">
+      <div class="pro3">
+        <img src="ASSET/product-sofa-w.png" alt="Lolito"> 
+        <div class="new">
+          <p>-50%</p> 
+      </div>
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Lolito</h3>
+          <p>Luxury big sofa</p>
+          <span class="n-price">Rp 7.000.000</span>
+          <span class="o-price">Rp 14.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 4TH PRODUCT -->
+     <div class="pro4-con">
+      <div class="pro4">
+        <img src="ASSET/product-dis.jpg" alt="Respira">
+         <div class="new1">
+          <p>New</p> 
+      </div>
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Resoiro</h3>
+          <p>Outdoor bar table and stool</p>
+          <span class="n-price">Rp 15.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 5TH PRODUCT -->
+     <div class="pro5-con">
+      <div class="pro5">
+        <img src="ASSET/product-sidelamp.png" alt="Grifo">
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Grifo</h3>
+          <p>Night lamp</p>
+          <span class="n-price">Rp 1.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 6TH PRODUCT -->
+     <div class="pro6-con">
+      <div class="pro6">
+        <img src="ASSET/product-mug.png" alt="Muggo">
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Muggo</h3>
+          <p>Small mug</p>
+          <span class="n-price">Rp 150.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 7TH PRODUCT -->
+     <div class="pro7-con">
+      <div class="pro7">
+        <img src="ASSET/product-set.jpg" alt="Pingky">
+         <div class="new"><p>-50%</p> 
+      </div>
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Pingky</h3>
+          <p>Cute chair set</p>
+          <span class="n-price">Rp 50.000.000</span>
+          <span class="o-price">Rp 100.000.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 8TH PRODUCT -->
+     <div class="pro8-con">
+      <div class="pro8">
+        <img src="ASSET/product-flo.png" alt="Potty">
+        <div class="new1">
+          <p>New</p>
+          </div> 
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Potty</h3>
+          <p>Minimalist flower pot</p>
+          <span class="n-price">Rp500.000</span>
+        </div>
+      </div>
+     </div>
+      
+      
+    </div>
+    <div class="p-card">
+      <!-- 9TH PRODUCT -->
+     <div class="pro1-con">
+       <div class="pro1"><img src="ASSET/cart-sofa.jpg" alt="Syitherine"> <div class="new"><p>-30%</p> 
+      </div>
+      <div class="ovalay"> 
+        <button>Add to cart</button>
+        <div class="accord">
+          <span> <img src="ASSET/gridicons_share.png" alt="">Share</span><span> <img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span><span> <img src="ASSET/Heart.png" alt="">Like</span>
+        </div>
+      </div>
+      <div class="pro-text">
+        <h3> Syitherine</h3>
+        <p>stylish cafe chair</p>
+        <span class="n-price"> Rp 2.500.000 </span>
+        <span class="o-price">Rp 3.500.000</span>
+      </div>
+    </div>
+    </div>
+
+    <!-- 10TH PRODUCT -->
+     <div class="pro2-con">
+      <div class="pro2">
+        <img src="ASSET/cart-ch.png" alt="">
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Leviosa</h3>
+          <p>Stylish cafe chair</p>
+          <span class="n-price">Rp 2.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 11TH PRODUCT -->
+     <div class="pro3-con">
+      <div class="pro3">
+        <img src="ASSET/down-sample.png" alt="Lolito"> 
+        <div class="new">
+          <p>-50%</p> 
+      </div>
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Lolito</h3>
+          <p>Luxury big sofa</p>
+          <span class="n-price">Rp 7.000.000</span>
+          <span class="o-price">Rp 14.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 12TH PRODUCT -->
+     <div class="pro4-con">
+      <div class="pro4">
+        <img src="ASSET/product-sofa.jpg" alt="Respira">
+         <div class="new1">
+          <p>New</p> 
+      </div>
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Resoiro</h3>
+          <p>Outdoor bar table and stool</p>
+          <span class="n-price">Rp 15.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 13TH PRODUCT -->
+     <div class="pro5-con">
+      <div class="pro5">
+        <img src="ASSET/flower-sample.png" alt="Grifo">
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Florry</h3>
+          <p>Night lamp</p>
+          <span class="n-price">Rp 1.500.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 14TH PRODUCT -->
+     <div class="pro6-con">
+      <div class="pro6">
+        <img src="ASSET/stool-sample.png" alt="Muggo">
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Chiver</h3>
+          <p>Small mug</p>
+          <span class="n-price">Rp 960.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 15TH PRODUCT -->
+     <div class="pro7-con">
+      <div class="pro7">
+        <img src="ASSET/kitchen-sample.png" alt="Pingky">
+         <div class="new"><p>-50%</p> 
+      </div>
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Posky</h3>
+          <p>Cute Kitchen set</p>
+          <span class="n-price">Rp 50.000.000</span>
+          <span class="o-price">Rp 100.000.000</span>
+        </div>
+      </div>
+     </div>
+      
+    <!-- 16TH PRODUCT -->
+     <div class="pro8-con">
+      <div class="pro8">
+        <img src="ASSET/product-fan.png" alt="Potty">
+        <div class="new1">
+          <p>New</p>
+          </div> 
+        <div class="ovalay">
+          <button>Add to cart</button>
+          <div class="accord">
+            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
+            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
+            <span><img src="ASSET/Heart.png" alt="">Like</span>
+          </div>
+        </div>
+        <div class="pro-text">
+          <h3>Futty</h3>
+          <p>Maximum ceiling fan</p>
+          <span class="n-price">Rp 900.000</span>
+        </div>
+      </div>
+     </div>
+      
+      
+    </div>
+    <div class="next">
+     <div class="n-1"><a href="">1</a></div>
+     <div class="n-1"><a href="">2</a></div>
+     <div class="n-1"><a href="">3</a></div>
+     <div class="n-2"><a href="">Next</a></div>
+    </div>
+    </section>
+    <section class="article">
+      <div>
+        <img src="ASSET/Vector (2).png" alt="">
+        <p>High Quality</p>
+        <span>crafted from top materials</span>
+      </div>
+      <div>
+        <img src="ASSET/Vector (3).png" alt="">
+        <p>Warranty Protection</p>
+        <span>Over 2 years</span>
+      </div>
+      <div>
+        <img src="ASSET/Vector (4).png" alt="">
+        <p>Free Shipping</p>
+        <span>Order over 150$</span>
+      </div>
+      <div>
+        <img src="ASSET/Vector (5).png" alt="">
+        <p>24/7 Suppport</p>
+        <span>Dedicated support</span>
+      </div>
+      
+    </section>
+    <!-- FOOTER SECTION -->
+   <footer>
+    <div class="front">
+      <div class="text">
+        <h2>Funiro.</h2>
+        <p> 400 University Drive Suite 200 Coral
+          <br>Gables <br>Fl 33134 USA
+        </p>
+      </div>
+
+      <div class="list">
+        <p><a href="#" class="a1">Links</a></p>
+        <ul>
+       <li><a href="Index.html">Home</a></li>
+       <li><a href="shop.html">Shop</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       </ul>
+      </div>
+      <div class="list">
+        <p><a href="#" class="a1">Help</a></p>
+       <ul>
+       <li><a href="#">Payment option</a></li>
+       <li><a href="#">Returns</a></li>
+       <li><a href="#">Privacy Policies</a></li>
+       </ul>
+      </div>
+      <div class="news">
+        <p><a href="" class="a1">newsletter</a></p>
+       <input type="text" placeholder="Enter Your Email Addtress">
+        <button><a href="">SUBSCRIBE</a></button>
+            </div>
+    </div>
+    <div class="back"> 
+      <p>2025 Furino. All rights reverved</p>
+    </div>
+   </footer>
+</body>
+</html>
