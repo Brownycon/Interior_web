@@ -295,6 +295,7 @@ nav a {
 .checkout-btn:hover {
   transform: translateY(-2px);
   background: #222;
+  color: #fff;
 }
 
 /* Fade-in for entire page */
