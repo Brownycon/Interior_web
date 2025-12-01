@@ -1,20 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    { "src": "/about", "dest": "/Aboutus.html" },
-    { "src": "/contact", "dest": "/blog.html" },
-    { "src": "/products", "dest": "/cart.html" },
-    { "src": "/(.*)", "dest": "/checkout.html" },
-    { "src": "/(.*)", "dest": "/Contact.html" },
-    { "src": "/(.*)", "dest": "/Index.html" },
-    { "src": "/(.*)", "dest": "/product_comparisoon.html" },
-    { "src": "/(.*)", "dest": "/shop_cart.html" },
-    { "src": "/(.*)", "dest": "/shop.html" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": []
 }
