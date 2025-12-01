@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="Contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <title>Blog</title>
+  <title>Contact</title>
 </head>
 <body>
   <!-- HEADER -->
@@ -24,7 +24,7 @@
       <nav>
         <a href="Index.html" target="_blank">Home</a>
         <a href="shop.html" target="_blank">Shop</a>
-        <a href="about.html" target="_blank">About</a>
+        <a href="Aboutus.html" target="_blank">About</a>
         <a href="contact.html" target="_blank">Contact</a>
         <a href="blog.html" target="_blank">Blog</a>
       </nav>
@@ -47,7 +47,77 @@
         </div>
       </div>
     </section>
-     <section class="article">
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+
+    <div class="title-area">
+        <h2>Get In Touch With Us</h2>
+        <p>For more Information about our Product & Services, Please feel free to Engrave.
+           A BRAND OUR STAFF Always Be there to Serve You Out. Do Not Hesitate!</p>
+    </div>
+
+    <div class="contact-wrapper">
+
+        <!-- LEFT INFO -->
+      <div class="contact-info">
+
+    <div class="info-box">
+        <i class="bi bi-geo-alt"></i>
+        <div class="info-text">
+            <h4>Address</h4>
+            <p>276 St Eve, Kumoa, New York 10031<br>United States of America</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <i class="bi bi-telephone"></i>
+        <div class="info-text">
+            <h4>Phone</h4>
+            <p>Mobile : (+84) 456-6789<br>Hotline : (+234) 704-4874-282</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <i class="bi bi-clock-history"></i>
+        <div class="info-text">
+            <h4>Working Time</h4>
+            <p>Monday–Friday: 9:00–20:00<br>Saturday–Sunday: 10:00–21:00</p>
+        </div>
+    </div>
+
+</div>
+
+
+        <!-- RIGHT FORM -->
+        <form class="contact-form" id="contactForm">
+             <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Email address">
+             <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject (This is optional)">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Hi! i'd like to ask about"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+
+            <p class="form-success" id="successMsg">Your message has been sent ✔</p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+    <!-- CHECKOUT SECTION -->
+    <section class="check">
+
+    </section>
+
+   <section class="article">
       <div>
         <img src="ASSET/Vector (2).png" alt="">
         <p>High Quality</p>
@@ -107,6 +177,43 @@
       <p>2025 Furino. All rights reverved</p>
     </div>
    </footer>
-  
+   <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+    let success = document.getElementById("successMsg");
+
+    if(name.value.trim() === "" || email.value.trim() === "" || message.value.trim() === ""){
+        alert("Please fill in the required fields.");
+        return;
+    }
+
+    success.style.display = "block";
+
+    // Clear form
+    name.value = "";
+    email.value = "";
+    document.getElementById("subject").value = "";
+    message.value = "";
+});
+// Toggle Hamburger Menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll("nav a").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
+
+   </script>
 </body>
 </html>

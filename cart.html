@@ -24,7 +24,7 @@
       <nav>
         <a href="Index.html" target="_blank">Home</a>
         <a href="shop.html" target="_blank">Shop</a>
-        <a href="about.html" target="_blank">About</a>
+        <a href="Aboutus.html" target="_blank">About</a>
         <a href="contact.html" target="_blank">Contact</a>
         <a href="blog.html" target="_blank">Blog</a>
       </nav>
@@ -71,12 +71,14 @@
       <div class="cart-price">₦ 250,000.00</div>
 
       <div class="cart-qty">
-        <input type="number" id="qtyInput" min="1" max="15" placeholder="1`">
+        <input type="number" id="qtyInput" min="1" max="15" value="1" aria-label="Quantity">
+
       </div>
 
       <div class="cart-subtotal" id="subtotalValue">₦ 250,000.00 <img src="ASSET/Vector (6).png" alt=""></div>
 
-      <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+<button class="delete-btn" aria-label="Remove item"><i class="bi bi-trash"></i></button>
+
     </div>
   </div>
 
@@ -94,7 +96,7 @@
       <span id="totalFinal">₦ 250,000.00</span>
     </div>
 
-    <a href=""><button class="checkout-btn">Check Out</button></a>
+<a href="checkout.html" class="checkout-btn">Check Out</a>
   </div>
 
 </div>
@@ -155,8 +157,10 @@
       </div>
       <div class="news">
         <p><a href="" class="a1">newsletter</a></p>
-       <input type="text" placeholder="Enter Your Email Addtress">
-        <button><a href="">SUBSCRIBE</a></button>
+       <form class="newsletter-form" action="#" onsubmit="event.preventDefault(); alert('Thanks — demo only');">
+  <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
+  <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+</form>
             </div>
     </div>
     <div class="back"> 
@@ -191,6 +195,32 @@ qtyInput.addEventListener("input", () => {
   totalSubtotal.textContent = formatMoney(newSubtotal);
   totalFinal.textContent = formatMoney(newSubtotal);
 });
+
+(function(){
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav');
+  const iconGroup = document.querySelector('.icon');
+
+  // Toggle mobile nav
+  if (hamburger){
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      if (nav) nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      if (iconGroup) iconGroup.style.display = iconGroup.style.display === 'flex' ? 'none' : 'flex';
+    });
+  }
+
+  // Ensure header space reserved so content isn't hidden
+  function updateTopPadding(){
+    const header = document.querySelector('header');
+    if (header) document.body.style.paddingTop = header.offsetHeight + 'px';
+  }
+  window.addEventListener('resize', updateTopPadding);
+  window.addEventListener('load', updateTopPadding);
+  updateTopPadding();
+})();
+
+
    </script>
 </body>
 </html>

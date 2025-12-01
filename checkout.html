@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="checkout.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <title>Check out</title>
+  <title>Checkout</title>
 </head>
 <body>
   <!-- HEADER -->
@@ -24,7 +24,7 @@
       <nav>
         <a href="Index.html" target="_blank">Home</a>
         <a href="shop.html" target="_blank">Shop</a>
-        <a href="about.html" target="_blank">About</a>
+        <a href="Aboutus.html" target="_blank">About</a>
         <a href="contact.html" target="_blank">Contact</a>
         <a href="blog.html" target="_blank">Blog</a>
       </nav>
@@ -35,7 +35,7 @@
           <a href="shop_cart.html"><i class="bi bi-cart3"></i></a>
         </div>
 
-      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      
     </header>
     <!-- HEAD SECTION -->
     <section class="head">
@@ -47,13 +47,138 @@
         </div>
       </div>
     </section>
+    <div class="wrapper">
 
-    <!-- CHECKOUT SECTION -->
-    <section class="check">
+    <!-- LEFT SIDE – BILLING FORM -->
+    <div class="billing-section">
+        <h2>Billing details</h2>
 
-    </section>
+        <div class="row">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" required>
+            </div>
+        </div>
 
-   <section class="article">
+        <div class="input-group">
+            <label>Company Name (Optional)</label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>Country / Region</label>
+            <select>
+                <option>Sri Lanka</option>
+                <option value="">Nigeria</option>
+                <option value="">Canada</option>
+                <option value="">Chad</option>
+                <option value="">Syria</option>
+                <option value="">China</option>
+                <option value="">Poland</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Street address</label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>Town / City</label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>Province</label>
+            <select>
+                <option>Western Province</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>ZIP code</label>
+            <input type="text" required>
+        </div>
+
+        <div class="input-group">
+            <label>Phone</label>
+            <input type="text" required placeholder="+234 703 4870 981">
+        </div>
+
+        <div class="input-group">
+            <label>Email address</label>
+            <input type="email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Additional Information</label>
+            <textarea></textarea>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE – ORDER SUMMARY -->
+    <div class="order-summary-section">
+
+        <table class="order-table">
+            <tr>
+                <th>Product</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>Angelica Juice x 1</td>
+                <td>Rs. 250,000.00</td>
+            </tr>
+            <tr>
+                <td class="small-text">Subtotal</td>
+                <td>Rs. 250,000.00</td>
+            </tr>
+            <tr>
+                <td class="total-text">Total</td>
+                <td class="total-price">Rs. 250,000.00</td>
+            </tr>
+        </table>
+
+        <div class="payment-section">
+            <label class="radio-item">
+                <input type="radio" name="pay" checked>
+                <span>Direct bank transfer</span>
+            </label>
+            <p class="payment-note">
+                Make your payment directly into our bank account. Please use
+                your Order ID as the payment reference. Your order will not be
+                shipped until funds have cleared in our account.
+            </p>
+
+            <label class="radio-item inactive">
+                <input type="radio" name="pay">
+                <span>Direct Bank Transfer</span>
+            </label>
+
+            <label class="radio-item inactive">
+                <input type="radio" name="pay">
+                <span>Cash on Delivery</span>
+            </label>
+
+            <p class="privacy-note">
+                Your personal data will be used to support your experience
+                throughout this website, to manage access to your account, and
+                for other purposes described in our privacy policy.
+            </p>
+
+            <button class="order-btn">Place order</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- FILTER SECTION -->
+     <section class="article">
       <div>
         <img src="ASSET/Vector (2).png" alt="">
         <p>High Quality</p>
@@ -113,5 +238,28 @@
       <p>2025 Furino. All rights reverved</p>
     </div>
    </footer>
+  <script>
+  // Example JS placeholder – can be expanded for validation, form submission, etc.
+
+document.querySelector(".order-btn").addEventListener("click", () => {
+    alert("Order placed successfully!");
+});
+
+// Toggle Hamburger Menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll("nav a").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
+
+</script>
 </body>
 </html>

@@ -24,7 +24,7 @@
       <nav>
         <a href="Index.html" target="_blank">Home</a>
         <a href="shop.html" target="_blank">Shop</a>
-        <a href="about.html" target="_blank">About</a>
+        <a href="Aboutus.html" target="_blank">About</a>
         <a href="contact.html" target="_blank">Contact</a>
         <a href="blog.html" target="_blank">Blog</a>
       </nav>
@@ -41,9 +41,9 @@
     <section class="head">
       <img src="ASSET/shopbg.jpg" alt="Background image">
       <div class="ovalay1"> 
-        <p>Shop</p>
+        <p>Blog</p>
         <div class="accord1">
-          <span>Home > Shop</span>
+          <span>Home > Blog</span>
         </div>
       </div>
     </section>
@@ -271,6 +271,16 @@
     }
   });
 })();
+function toggleside() {
+  let sidebar = document.querySelector(".sidebar-box");
+
+  if (sidebar.style.transform === "translateX(0%)") {
+    sidebar.style.transform = "translateX(-100%)";
+  } else {
+    sidebar.style.transform = "translateX(0%)";
+  }
+}
+
 
   </script>
 

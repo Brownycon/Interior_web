@@ -26,7 +26,7 @@
       <nav>
         <a href="#home" target="_blank">Home</a>
         <a href="shop.html" target="_blank">Shop</a>
-        <a href="about.html" target="_blank">About</a>
+        <a href="bout.html" target="_blank">About</a>
         <a href="contact.html" target="_blank">Contact</a>
         <a href="blog.html" target="_blank">Contact</a>
       </nav>
@@ -338,5 +338,40 @@
     </div>
    </footer>
   
+   // Add this script block right before the closing </body> tag.
+
+<script>
+  // Hamburger Menu Script
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.querySelector("nav");
+
+  hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  });
+
+  // Existing Contact Form Script (kept for completeness)
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+    let success = document.getElementById("successMsg");
+
+    if(name.value.trim() === "" || email.value.trim() === "" || message.value.trim() === ""){
+        alert("Please fill in the required fields.");
+        return;
+    }
+
+    success.style.display = "block";
+
+    // Clear form
+    name.value = "";
+    email.value = "";
+    document.getElementById("subject").value = "";
+    message.value = "";
+  });
+</script>
 </body>
 </html>

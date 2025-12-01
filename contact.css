@@ -149,6 +149,142 @@ nav a {
         .hamburger.active span:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -6px);
         }
+
+
+        /* Section Wrapper */
+.contact-section {
+  width: 100%;
+  padding: 60px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.title-area {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.title-area h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.title-area p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Layout Wrapper */
+.contact-wrapper {
+  width: 100%;
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Left Info Section */
+
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.info-box i {
+  font-size: 22px;
+  color: #000;
+  margin-top: 2px; /* slight alignment adjustment */
+}
+
+.info-text h4 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info-text p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+/* Right Form */
+.contact-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+.contact-form label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  height: 75px;
+  font-weight: 400;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.submit-btn {
+  width: 120px;
+  padding: 12px 0;
+  background: #b99346;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #fff;
+  color: #b99346;
+}
+
+/* Success Text */
+.form-success {
+  display: none;
+  margin-top: 5px;
+  color: green;
+  font-size: 14px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+        /* FILTER STYLLE */
 .article{
   display: flex;
   /* width: 100%; */
@@ -238,3 +374,373 @@ margin-bottom: 45px;
   border-top: 2px solid;
   
 }        
+
+/* EXTERNAL RESOURSE */
+
+/* --- RESET & BASICS --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  padding-top: 70px; /* Prevent header overlapping content */
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px; /* Simplified padding */
+  position: fixed;
+  z-index: 2000;
+  background-color: #fff;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Added shadow for visibility */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c88100;
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+}
+
+.icon a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+/* Hamburger Styles */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+/* --- HEAD HERO SECTION --- */
+.head {
+  position: relative;
+  width: 100%;
+  height: 313px;
+}
+
+.head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Fixed: was position: block */
+}
+
+.ovalay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjusted opacity */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  opacity: 0; 
+}
+.head:hover .ovalay1 {
+  opacity: 1;}
+
+.ovalay1 p {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+}
+
+/* --- CHECKOUT WRAPPER --- */
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.billing-section {
+  flex: 1.4;
+}
+
+.order-summary-section {
+  flex: 1;
+}
+
+/* FORM STYLES */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  height: 90px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row .input-group {
+  flex: 1;
+}
+
+/* ORDER SUMMARY TABLE */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.order-table th {
+  text-align: left;
+  padding-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #eee;
+}
+
+.order-table td {
+  padding: 15px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.total-price {
+  font-weight: bold;
+  color: #c88100;
+  font-size: 18px;
+}
+
+/* PAYMENT */
+.order-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #000;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.order-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* --- FEATURES / FILTER SECTION --- */
+.article {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  padding: 50px 5%;
+  align-items: center;
+  justify-content: space-around;
+  background: #FAF3EA;
+  gap: 30px;
+}
+
+.article div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items inside */
+}
+
+.article img {
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #242424;
+}
+
+.article span {
+  color: #898989;
+  font-size: 0.9rem;
+}
+
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* 1. Laptops & Small Desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .wrapper {
+    gap: 30px;
+    padding: 30px 15px;
+  }
+  
+  .front {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* 2. Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Header Logic */
+  .hamburger {
+    display: flex; /* Show Hamburger */
+  }
+
+  nav {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+  }
+
+  nav.active {
+    left: 0; /* Slide in menu */
+  }
+
+  .icon {
+    display: none; /* Hide icons on tablet/mobile to save space, or move them */
+  }
+
+  /* Checkout Layout Stack */
+  .wrapper {
+    flex-direction: column; /* Stack Billing on top of Order Summary */
+  }
+
+  .billing-section, 
+  .order-summary-section {
+    width: 100%;
+    flex: auto;
+  }
+
+  .article {
+    justify-content: center;
+  }
+  
+  .article div {
+    width: 45%; /* 2 items per row */
+    margin-bottom: 20px;
+  }
+}
+
+/* 3. Larger Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 0 20px;
+  }
+
+  .head {
+    height: 200px; /* Reduce hero height */
+  }
+
+  .row {
+    flex-direction: column; /* Stack First/Last Name */
+    gap: 0;
+  }
+
+  .article div {
+    width: 100%; /* 1 item per row in features */
+    text-align: center;
+  }
+
+  .front {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* 4. Small Mobile Devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .brand span {
+    display: none; /* Hide brand name if logo exists to save space */
+  }
+
+  .ovalay1 p {
+    font-size: 1.2rem;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+}

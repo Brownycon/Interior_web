@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>About Us</title>
+</head>
+<body>
+  <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <span class="logo"><img src="ASSET/logo.png" alt=""></span>
+        <span>Furnito</span>
+      </div>
+      <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+      <nav>
+        <a href="Index.html" target="_blank">Home</a>
+        <a href="shop.html" target="_blank">Shop</a>
+        <a href="Aboutus.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="blog.html" target="_blank">Blog</a>
+      </nav>
+       <div class="icon">
+          <a href="contact.html"><i class="bi bi-person-exclamation"></i></a>
+          <a href="#"><i class="bi bi-search"></i></a>
+          <a href="#"><i class="bi bi-heart"></i></a>
+          <a href="shop_cart.html"><i class="bi bi-cart3"></i></a>
+        </div>
+
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </header>
+    <!-- HEAD SECTION -->
+    <section class="head">
+      <img src="ASSET/shopbg.jpg" alt="Background image">
+      <div class="ovalay1"> 
+        <p>About Us</p>
+        <div class="accord1">
+          <span>Home > About Us</span>
+        </div>
+      </div>
+    </section>
+    <section class="about-section">
+
+    <div class="about-image">
+        <img src="ASSET/bedroom-sample.png" alt="Interior Furniture">
+    </div>
+
+    <div class="about-content">
+
+        <h2>Crafting Interiors That Speak Luxury & Comfort</h2>
+
+        <p class="about-text">
+            At <strong>Elegance Interiors</strong>, we believe furniture is more than objects in a room — 
+            it is the soul of every space.  
+            We design premium, handcrafted pieces that blend <strong>modern minimalism</strong> with 
+            <strong>timeless craftsmanship</strong>, creating an atmosphere that feels warm, balanced, and alive.
+        </p>
+
+        <p class="about-text">
+            Our design approach focuses on natural textures, soft tones, and geometric harmony. 
+            Every item is built with precision, using responsibly sourced materials that promise 
+            durability, comfort, and beauty.
+        </p>
+
+        <ul class="about-features">
+            <li>● Sustainable luxury materials</li>
+            <li>● Handcrafted modern furniture</li>
+            <li>● Custom interior styling</li>
+            <li>● Award-winning design team</li>
+        </ul>
+
+        <button class="about-btn" id="readMoreBtn">Learn More</button>
+    </div>
+
+</section>
+ <!-- CHECKOUT SECTION -->
+    <section class="check">
+
+    </section>
+
+   <section class="article">
+      <div>
+        <img src="ASSET/Vector (2).png" alt="">
+        <p>High Quality</p>
+        <span>crafted from top materials</span>
+      </div>
+      <div>
+        <img src="ASSET/Vector (3).png" alt="">
+        <p>Warranty Protection</p>
+        <span>Over 2 years</span>
+      </div>
+      <div>
+        <img src="ASSET/Vector (4).png" alt="">
+        <p>Free Shipping</p>
+        <span>Order over 150$</span>
+      </div>
+      <div>
+        <img src="ASSET/Vector (5).png" alt="">
+        <p>24/7 Suppport</p>
+        <span>Dedicated support</span>
+      </div>
+      
+    </section>
+     <!-- FOOTER SECTION -->
+   <footer>
+    <div class="front">
+      <div class="text">
+        <h2>Funiro.</h2>
+        <p> 400 University Drive Suite 200 Coral
+          <br>Gables <br>Fl 33134 USA
+        </p>
+      </div>
+
+      <div class="list">
+        <p><a href="#" class="a1">Links</a></p>
+        <ul>
+       <li><a href="Index.html">Home</a></li>
+       <li><a href="shop.html">Shop</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       </ul>
+      </div>
+      <div class="list">
+        <p><a href="#" class="a1">Help</a></p>
+       <ul>
+       <li><a href="#">Payment option</a></li>
+       <li><a href="#">Returns</a></li>
+       <li><a href="#">Privacy Policies</a></li>
+       </ul>
+      </div>
+      <div class="news">
+        <p><a href="" class="a1">newsletter</a></p>
+       <input type="text" placeholder="Enter Your Email Addtress">
+        <button><a href="">SUBSCRIBE</a></button>
+            </div>
+    </div>
+    <div class="back"> 
+      <p>2025 Furino. All rights reverved</p>
+    </div>
+   </footer>
+
+<script>
+  document.getElementById("readMoreBtn").addEventListener("click", function () {
+
+    const extra = document.createElement("p");
+
+    extra.innerHTML =
+        "Our philosophy centers on creating emotional connections between people and their living spaces. " +
+        "Through innovative design and attention to detail, we transform ordinary rooms into extraordinary experiences.";
+
+    extra.style.marginTop = "15px";
+    extra.style.fontSize = "15px";
+    extra.style.lineHeight = "1.7";
+    extra.style.opacity = "0";
+    extra.style.transition = "0.5s ease";
+
+    // Insert after button
+    this.insertAdjacentElement("beforebegin", extra);
+
+    setTimeout(() => {
+        extra.style.opacity = "1";
+    }, 50);
+
+    this.disabled = true;
+    this.innerText = "Content Added";
+});
+
+/* ---------- mobile nav toggle ---------- */
+(function(){
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.querySelector('header nav');
+  const mobileToggle = document.getElementById('mobileToggle');
+
+  function toggleNav(){
+    // toggle visual hamburger
+    if(hamburger){
+      hamburger.classList.toggle('active');
+    }
+    // toggle nav open on mobile by adding/removing class
+    if(nav){
+      nav.classList.toggle('mobile-open');
+    }
+  }
+
+  if(hamburger){
+    hamburger.addEventListener('click', toggleNav);
+  }
+
+  if(mobileToggle){
+    mobileToggle.addEventListener('click', toggleNav);
+  }
+
+  // Clicking outside closes the mobile menu
+  document.addEventListener('click', function(e){
+    const isClickInside = nav && (nav.contains(e.target) || (hamburger && hamburger.contains(e.target)));
+    if(!isClickInside && nav && nav.classList.contains('mobile-open')){
+      nav.classList.remove('mobile-open');
+      if(hamburger) hamburger.classList.remove('active');
+    }
+  });
+
+  // ensure body padding matches header height (in case header size changes)
+  function updateBodyPadding(){
+    const header = document.querySelector('header');
+    if(header){
+      document.body.style.paddingTop = header.offsetHeight + 'px';
+    }
+  }
+  window.addEventListener('resize', updateBodyPadding);
+  window.addEventListener('load', updateBodyPadding);
+  updateBodyPadding();
+
+})();
+
+/* ---------- "Read More" content injection (keeps original behavior) ---------- */
+(function(){
+  const readMoreBtn = document.getElementById("readMoreBtn");
+  if(!readMoreBtn) return;
+
+  readMoreBtn.addEventListener("click", function () {
+    // avoid multiple inserts
+    if(this.dataset.added) return;
+
+    const extra = document.createElement("p");
+    extra.className = 'additional-paragraph';
+    extra.innerText =
+        "Our philosophy centers on creating emotional connections between people and their living spaces. " +
+        "Through innovative design and attention to detail, we transform ordinary rooms into extraordinary experiences.";
+
+    extra.style.marginTop = "15px";
+    extra.style.fontSize = "15px";
+    extra.style.lineHeight = "1.7";
+    extra.style.opacity = "0";
+    extra.style.transition = "opacity 0.45s ease, transform 0.45s ease";
+    extra.style.transform = "translateY(6px)";
+
+    // Insert before button
+    this.insertAdjacentElement("beforebegin", extra);
+
+    setTimeout(() => {
+        extra.style.opacity = "1";
+        extra.style.transform = "translateY(0)";
+    }, 50);
+
+    this.disabled = true;
+    this.innerText = "Content Added";
+    this.dataset.added = "1";
+  });
+})();
+
+
+
+</script>
+  
+</body>
+</html>
