@@ -816,4 +816,149 @@ margin-bottom: 45px;
   height: 35px;
   padding-left: 5px;
 }
+ 
+/* EXTERNAL */
+/* ===== Responsive Design ===== */
+
+/* Small Mobile Devices: 320px */
+@media screen and (max-width: 320px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .icon {
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .p-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .pro1-con, .pro2-con, .pro3-con, .pro4-con,
+  .pro5-con, .pro6-con, .pro7-con, .pro8-con {
+    width: 100%;
+    height: auto;
+  }
+  .head img {
+    height: 200px;
+  }
+  .under {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  .article {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Larger Smartphones: 480px */
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .icon {
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .p-card {
+    margin-left: 15px;
+    margin-right: 15px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+  }
+  .head img {
+    height: 250px;
+  }
+  .under {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+  }
+  .article {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Tablets: 768px */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .icon {
+    margin-top: 10px;
+    gap: 15px;
+  }
+  .p-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+  }
+  .head img {
+    height: 280px;
+  }
+  .under {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+  }
+}
+
+/* Small Desktops/Laptops: 1024px */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  nav {
+    gap: 20px;
+  }
+  .icon {
+    gap: 15px;
+  }
+  .p-card {
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 35px;
+  }
+  .head img {
+    height: 300px;
+  }
+  .under {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+}
 

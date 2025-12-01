@@ -13,44 +13,43 @@
 <body>
     <!-- HEADER -->
     <header>
-      <div class="brand">
-        <span class="logo"><img src="ASSET/logo.png" alt=""></span>
-        <span>Furnito</span>
-      </div>
-      <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <div class="brand">
+    <span class="logo"><img src="ASSET/logo.png" alt="Furnito logo"></span>
+    <span>Furnito</span>
+  </div>
 
-      <nav>
-        <a href="#home" target="_blank">Home</a>
-        <a href="shop.html" target="_blank">Shop</a>
-        <a href="bout.html" target="_blank">About</a>
-        <a href="contact.html" target="_blank">Contact</a>
-        <a href="blog.html" target="_blank">Contact</a>
-      </nav>
-       <div class="icon">
-          <a href="contact.html"><i class="bi bi-person-exclamation"></i></a>
-          <a href="#"><i class="bi bi-search"></i></a>
-          <a href="#"><i class="bi bi-heart"></i></a>
-          <a href="product_comparisoon.html"><i class="bi bi-cart3"></i></a>
-        </div>
+  <!-- Mobile hamburger -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 
-      <button class="mobile-toggle" id="mobileToggle">☰</button>
-    </header>
-    <!-- HERO SECTION -->
- <section class="hero" id="home">
-    
-      <img src="ASSET/hero_bg.png" alt="Background image">
-      <div class="cotain-text">
-         <h1><h3>New Arrival</h3>
-          <span class="accent">Discover Our </span> <span class="accent">New Collection </span></h1>
-        <p class="lead">"We specialize in residential and hospitality interior design, blending local materials with global trends"</p>
-       <button class="btn" id="#service">BUY NOW</button>
-      </div>
+  <nav id="mainNav" class="nav">
+    <a href="Index.html" target="_blank">Home</a>
+    <a href="shop.html" target="_blank">Shop</a>
+    <a href="Aboutus.html" target="_blank">About</a>
+    <a href="contact.html" target="_blank">Contact</a>
+    <a href="blog.html" target="_blank">Blog</a>
+  </nav>
 
- </section>
+  <div class="icon">
+    <a href="contact.html"><i class="bi bi-person-exclamation"></i></a>
+    <a href="#"><i class="bi bi-search"></i></a>
+    <a href="#"><i class="bi bi-heart"></i></a>
+    <a href="cart.html"><i class="bi bi-cart3"></i></a>
+  </div>
+</header>
+
+<!-- HERO: fix duplicate id and button id -->
+<section class="hero" id="home">
+  <img src="ASSET/hero_bg.png" alt="Background image">
+  <div class="cotain-text">
+     <h3>New Arrival</h3>
+     <h1><span class="accent">Discover Our</span> <span class="accent">New Collection</span></h1>
+    <p class="lead">We specialize in residential and hospitality interior design, blending local materials with global trends</p>
+   <button class="btn" id="service">BUY NOW</button>
+  </div>
+</section>
+
  <!-- SUB HERO -->
   <div class="sub-hero" id="home">
     <div class="card-text">
@@ -79,7 +78,7 @@
       <div class="ovalay"> 
         <button>Add to cart</button>
         <div class="accord">
-          <span> <img src="ASSET/gridicons_share.png" alt="">Share</span><span> <img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span><span> <img src="ASSET/Heart.png" alt="">Like</span>
+          <span> <i class="bi bi-share"></i>Share</span><span> <i class="bi bi-arrow-left-right"></i>Compare</span><span> <i class="bi bi-heart"></i>Like</span>
         </div>
       </div>
       <div class="pro-text">
@@ -98,9 +97,9 @@
         <div class="ovalay">
           <a href="shop_cart.html"><button>Add to cart</button></a>
           <div class="accord">
-            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
-            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
-            <span><img src="ASSET/Heart.png" alt="">Like</span>
+            <span><i class="bi bi-share"></i>Share</span>
+            <span><i class="bi bi-arrow-left-right"></i>Compare</span>
+            <span><i class="bi bi-heart"></i>Like</span>
           </div>
         </div>
         <div class="pro-text">
@@ -121,9 +120,9 @@
         <div class="ovalay">
           <button>Add to cart</button>
           <div class="accord">
-            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
-            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
-            <span><img src="ASSET/Heart.png" alt="">Like</span>
+            <span><i class="bi bi-share"></i>Share</span>
+            <span><i class="bi bi-arrow-left-right"></i>Compare</span>
+            <span><i class="bi bi-heart"></i>Like</span>
           </div>
         </div>
         <div class="pro-text">
@@ -145,9 +144,9 @@
         <div class="ovalay">
           <button>Add to cart</button>
           <div class="accord">
-            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
-            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
-            <span><img src="ASSET/Heart.png" alt="">Like</span>
+            <span><i class="bi bi-share"></i>Share</span>
+            <span><i class="bi bi-arrow-left-right"></i>Compare</span>
+            <span><i class="bi bi-heart"></i>Like</span>
           </div>
         </div>
         <div class="pro-text">
@@ -165,9 +164,9 @@
         <div class="ovalay">
           <button>Add to cart</button>
           <div class="accord">
-            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
-            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
-            <span><img src="ASSET/Heart.png" alt="">Like</span>
+            <span><i class="bi bi-share"></i>Share</span>
+            <span><i class="bi bi-arrow-left-right"></i>Compare</span>
+            <span><i class="bi bi-heart"></i>Like</span>
           </div>
         </div>
         <div class="pro-text">
@@ -185,9 +184,9 @@
         <div class="ovalay">
           <button>Add to cart</button>
           <div class="accord">
-            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
-            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
-            <span><img src="ASSET/Heart.png" alt="">Like</span>
+            <span><i class="bi bi-share"></i>Share</span>
+            <span><i class="bi bi-arrow-left-right"></i>Compare</span>
+            <span><i class="bi bi-heart"></i>Like</span>
           </div>
         </div>
         <div class="pro-text">
@@ -207,9 +206,9 @@
         <div class="ovalay">
           <button>Add to cart</button>
           <div class="accord">
-            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
-            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
-            <span><img src="ASSET/Heart.png" alt="">Like</span>
+            <span><i class="bi bi-share"></i>Share</span>
+            <span><i class="bi bi-arrow-left-right"></i>Compare</span>
+            <span><i class="bi bi-heart"></i>Like</span>
           </div>
         </div>
         <div class="pro-text">
@@ -231,9 +230,9 @@
         <div class="ovalay">
           <button>Add to cart</button>
           <div class="accord">
-            <span><img src="ASSET/gridicons_share.png" alt="">Share</span>
-            <span><img src="ASSET/compare-svgrepo-com 1.png" alt="">Compare</span>
-            <span><img src="ASSET/Heart.png" alt="">Like</span>
+            <span><i class="bi bi-share"></i>Share</span>
+            <span><i class="bi bi-arrow-left-right"></i>Compare</span>
+            <span><i class="bi bi-heart"></i>Like</span>
           </div>
         </div>
         <div class="pro-text">
@@ -264,7 +263,7 @@
         <p>01 &mdash; Bed Room</p>
         <h2>Inner peace</h2>
         </div>
-        <div class="arrow">➡</div>
+        <div class="arrow"><i class="bi bi-arrow-right"></i></div>
       </div>
     </div>
     <div class="s-simg">
@@ -338,40 +337,76 @@
     </div>
    </footer>
   
-   // Add this script block right before the closing </body> tag.
+ 
 
 <script>
-  // Hamburger Menu Script
+  // Mobile hamburger toggling (works across breakpoints)
   const hamburger = document.getElementById("hamburger");
-  const navMenu = document.querySelector("nav");
+  const mainNav = document.getElementById("mainNav");
 
-  hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-  });
-
-  // Existing Contact Form Script (kept for completeness)
-  document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    let name = document.getElementById("name");
-    let email = document.getElementById("email");
-    let message = document.getElementById("message");
-    let success = document.getElementById("successMsg");
-
-    if(name.value.trim() === "" || email.value.trim() === "" || message.value.trim() === ""){
-        alert("Please fill in the required fields.");
-        return;
+  function toggleMenu() {
+    const expanded = hamburger.classList.toggle("active");
+    if(mainNav) {
+      // toggle accessibility attribute
+      hamburger.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      // show/hide nav for mobile
+      if(window.innerWidth < 768) {
+        mainNav.style.display = hamburger.classList.contains('active') ? 'flex' : 'none';
+        mainNav.style.flexDirection = 'column';
+        mainNav.style.position = 'absolute';
+        mainNav.style.top = '64px';
+        mainNav.style.right = '16px';
+        mainNav.style.background = '#fff';
+        mainNav.style.boxShadow = '0 8px 24px rgba(0,0,0,0.12)';
+        mainNav.style.padding = '12px';
+        mainNav.style.borderRadius = '8px';
+      } else {
+        // on larger screens ensure nav is visible
+        mainNav.style.display = 'flex';
+        mainNav.style.position = '';
+        mainNav.style.top = '';
+        mainNav.style.right = '';
+        mainNav.style.boxShadow = '';
+      }
     }
+  }
 
-    success.style.display = "block";
+  if(hamburger) hamburger.addEventListener('click', toggleMenu);
 
-    // Clear form
-    name.value = "";
-    email.value = "";
-    document.getElementById("subject").value = "";
-    message.value = "";
+  // ensure nav shows properly on resize (responsive behavior)
+  window.addEventListener('resize', () => {
+    if(window.innerWidth >= 768 && mainNav) {
+      mainNav.style.display = 'flex';
+      mainNav.style.flexDirection = 'row';
+      hamburger.classList.remove('active');
+    } else if(window.innerWidth < 768 && mainNav) {
+      mainNav.style.display = 'none';
+      hamburger.setAttribute('aria-expanded','false');
+    }
   });
+
+  // Safe guard for contact form script referenced earlier:
+  const contactForm = document.getElementById('contactForm');
+  if(contactForm) {
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      // your form handling logic (if you have fields)
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+      if(name && email && message) {
+        if(name.value.trim() === "" || email.value.trim() === "" || message.value.trim() === "") {
+          alert("Please fill in required fields.");
+          return;
+        }
+        // show success message or do AJAX submit...
+        alert("Thanks! Message sent.");
+        name.value = ""; email.value = ""; message.value = "";
+      }
+    });
+  }
+  
 </script>
+
 </body>
 </html>

@@ -95,6 +95,7 @@
     </div>
 
     <div class="table-row">
+
       <div class="row-title">Model Number</div>
       <div class="row-left">TRDGUE90893S</div>
       <div class="row-right">DTREU883630</div>
@@ -312,6 +313,14 @@
   // Template contains no interactive functions.
 // JS file added intentionally for template completeness.
 console.log("Comparison page loaded.");
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
+
 
 </script>
 </body>
